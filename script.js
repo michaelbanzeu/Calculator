@@ -1,4 +1,7 @@
+const btnBackspace = document.getElementById('erase');
+btnBackspace.addEventListener('click', backspace);
+
 function backspace() {
-    var erase = document.getElementById("txt").value;
-    document.getElementById("txt").value = erase.substr(0, erase.length - 1);
+    const entry = document.getElementById('txt').value;
+    document.getElementById('txt').value = entry.substr(0, entry.length - 1);
 }
